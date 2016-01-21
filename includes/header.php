@@ -14,6 +14,9 @@ $cart = $_SESSION['cart'];
 ?>
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lu's Cakes</title>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="/js/sweetalert.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
@@ -21,9 +24,7 @@ $cart = $_SESSION['cart'];
     <link rel="stylesheet" type="text/css" href="/styles/sweetalert.css">
     <link href="/styles/bootstrap.min.css" rel="stylesheet">
     <link href="/styles/bootstrap-theme.min.css" rel="stylesheet">
-<head>
-    <meta charset="UTF-8">
-    <title>Lu's Cakes</title>
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
 </head>
 <body>
 <header>
