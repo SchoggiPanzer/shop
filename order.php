@@ -8,53 +8,53 @@ include("includes/header.php");
 ?>
 
 <main id="main">
-    <form id="order">
-        <ul class="order-form">
-            <li><h1><?php echo $lang['ORDER_TITLE']; ?></h1></li>
-            <li><label><?php echo $lang['FULL_NAME']; ?> <span class="required">*</span></label>
-                <input id="fname" type="text" name="fname" class="field-divided"
-                       placeholder=<?php echo $lang['FIRSTNAME']; ?> required/>&nbsp;<input id="lname" type="text"
-                                                                                            name="lname"
-                                                                                            class="field-divided"
-                                                                                            placeholder=<?php echo $lang['LASTNAME']; ?> required/>
-            </li>
-            <li>
-                <div id="wrongName" style="display: none"></div>
-            </li>
-            <li>
-                <label><?php echo $lang['EMAIL']; ?> <span class="required">*</span></label>
-                <input id="email" type="email" name="email" class="field-long"
-                       placeholder=<?php echo $lang['EMAIL']; ?> required/>
-            </li>
-            <li>
-                <label><?php echo $lang['ADDRESS']; ?> <span class="required">*</span></label>
-                <input id="street" type="text" name="street" class="field-divided"
-                       placeholder=<?php echo $lang['STREET']; ?> required/>&nbsp;<input id="nr" type="text"
-                                                                                         name="nr"
-                                                                                         class="field-divided"
-                                                                                         placeholder=<?php echo $lang['NR']; ?>  required/>
-            </li>
-            </li>
-            <li>
-                <label><?php echo $lang['ZIP_CITY']; ?> <span class="required">*</span></label>
-                <input id="zip" type="text" name="zip" class="field-divided"
-                       placeholder=<?php echo $lang['ZIP']; ?> required/>&nbsp;<input id="city" type="text"
-                                                                                      name="city"
-                                                                                      class="field-divided"
-                                                                                      placeholder=<?php echo $lang['CITY']; ?> required/>
-            </li>
+    <ul class="order-form">
+        <li><h1><?php echo $lang['ORDER_TITLE']; ?></h1></li>
+        <li><label><?php echo $lang['FULL_NAME']; ?> <span class="required">*</span></label>
+            <input id="fname" type="text" name="fname" class="field-divided"
+                   placeholder=<?php echo $lang['FIRSTNAME']; ?> required/>&nbsp;<input id="lname" type="text"
+                                                                                        name="lname"
+                                                                                        class="field-divided"
+                                                                                        placeholder=<?php echo $lang['LASTNAME']; ?> required/>
+        </li>
+        <li>
+            <div id="wrongName" style="display: none"></div>
+        </li>
+        <li>
+            <label><?php echo $lang['EMAIL']; ?> <span class="required">*</span></label>
+            <input id="email" type="email" name="email" class="field-long"
+                   placeholder=<?php echo $lang['EMAIL']; ?> required/>
+        </li>
+        <li>
+            <label><?php echo $lang['ADDRESS']; ?> <span class="required">*</span></label>
+            <input id="street" type="text" name="street" class="field-divided"
+                   placeholder=<?php echo $lang['STREET']; ?> required/>&nbsp;<input id="nr" type="text"
+                                                                                     name="nr"
+                                                                                     class="field-divided"
+                                                                                     placeholder=<?php echo $lang['NR']; ?>  required/>
+        </li>
+        </li>
+        <li>
+            <label><?php echo $lang['ZIP_CITY']; ?> <span class="required">*</span></label>
+            <input id="zip" type="text" name="zip" class="field-divided"
+                   placeholder=<?php echo $lang['ZIP']; ?> required/>&nbsp;<input id="city" type="text"
+                                                                                  name="city"
+                                                                                  class="field-divided"
+                                                                                  placeholder=<?php echo $lang['CITY']; ?> required/>
+        </li>
 
-            </li>
-            <li>
-                <label><?php echo $lang['YOUR_ORDER']; ?> <span class="required">*</span></label>
-                <textarea id="ordertext" name="ordertext" class="field-long field-textarea"></textarea>
-            </li>
-            <li><div id="orderfail" style="display: none; color: red;">Please writte a order</div></li>
-            <li>
-                <button id="btn-send" class="btn btn-default" type="submit"><?php echo $lang['SEND']; ?></button>
-            </li>
-        </ul>
-    </form>
+        </li>
+        <li>
+            <label><?php echo $lang['YOUR_ORDER']; ?> <span class="required">*</span></label>
+            <textarea id="ordertext" name="ordertext" class="field-long field-textarea"></textarea>
+        </li>
+        <li>
+            <div id="orderfail" style="display: none; color: red;">Please writte a order</div>
+        </li>
+        <li>
+            <button id="btn-send" class="btn btn-default" type="submit"><?php echo $lang['SEND']; ?></button>
+        </li>
+    </ul>
 </main>
 <script>
     $(document).ready(function () {
@@ -70,7 +70,7 @@ include("includes/header.php");
             var $ordertext = $("#ordertext");
 
             resetStyle();
-            if(checkForm($fname, $lname, $email, $street, $nr, $zip, $city, $ordertext)) {
+            if (checkForm($fname, $lname, $email, $street, $nr, $zip, $city, $ordertext)) {
                 var fname = $fname.val();
                 var lname = $lname.val();
                 var email = $email.val();
@@ -79,7 +79,6 @@ include("includes/header.php");
                 var zip = $zip.val();
                 var city = $city.val();
                 var ordertext = $ordertext.val();
-
                 $.ajax({
                     url: "save_order.php",
                     type: "POST",
@@ -109,16 +108,16 @@ include("includes/header.php");
 
         function hasOnlyNum($field) {
             var regex = /^\d+$/;
-            if(!regex.test($field.val())){
+            if (!regex.test($field.val())) {
                 $field.css('border-color', 'red');
                 return false;
             }
             return true;
         }
 
-        function hasOnlyChars($field){
+        function hasOnlyChars($field) {
             var regex = /^[a-zA-Z]+$/;
-            if(!regex.test($field.val())){
+            if (!regex.test($field.val())) {
                 $field.css('border-color', 'red');
                 return false;
             }
@@ -127,15 +126,15 @@ include("includes/header.php");
 
         function isEmail($email) {
             var regex = /^([a-zA-Z0-9_.+-])+@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})$/;
-            if(!regex.test($email.val())) {
+            if (!regex.test($email.val())) {
                 $email.css('border-color', 'red');
                 return false;
             }
             return true;
         }
 
-        function hasOrder($field){
-            if($field.val() == "") {
+        function hasOrder($field) {
+            if ($field.val() == "") {
                 $field.css('border-color', 'red');
                 $('#orderfail').show();
                 return false;
@@ -143,7 +142,7 @@ include("includes/header.php");
             return true;
         }
 
-        function checkForm($firstname, $lastname, $email, $street, $nr, $zip, $city, $order){
+        function checkForm($firstname, $lastname, $email, $street, $nr, $zip, $city, $order) {
             var ok = markEmtpyFields();
             ok = hasOnlyChars($firstname);
             ok = hasOnlyChars($lastname);
