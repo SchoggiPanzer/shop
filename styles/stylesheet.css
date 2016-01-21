@@ -1,0 +1,368 @@
+/*----------------------------------------------------------------------------------------------------------------------
+
+CSS FOR THE HEADER AND THE NAVIGATION-BAR
+
+----------------------------------------------------------------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+#main {
+    padding-bottom: 5em;
+}
+
+header {
+    padding-left: 10%;
+    padding-right: 10%;
+    color: black;
+}
+
+#navbar-big {
+    height: 75px;
+    background-color: #000000;
+    font-size: 18px
+}
+
+#shop-title {
+    font-size: 30px;
+}
+
+#navbar {
+    margin: 5px;
+}
+
+#nav-left {
+    margin-left: 40px;
+}
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------
+
+CSS for index site
+
+----------------------------------------------------------------------------------------------------------------------*/
+body {
+    background: url("../img/bg_image.png") no-repeat fixed right top;
+    background-size: 100% auto;
+
+}
+
+#cont {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Raleway, sans-serif;
+}
+
+/*CSS FOR THE LEFT CONTAINER*/
+
+#cont-left {
+    position: relative;
+    margin: 0 0 1em 7em;
+    width: 25em;
+    float: left;
+}
+
+#cont-up {
+    border: 1em solid #ffffff;
+    text-align: center;
+    display: inline-block;
+    height: 20em;
+    padding-bottom: 20%;
+}
+
+#cont-up h1 {
+    margin-top: 20%;
+}
+
+#cont-down {
+    border: 1em solid #ffffff;
+    margin-top: 1em;
+    height: 25em;
+    text-align: center;
+}
+#cont-down h1 {
+    margin: 0.5em 1em 0.5em 1em;
+}
+
+#cont-down p {
+    margin: 0 1.5em 0.5em 1.5em;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/*CSS FOR THE RIGHT CONTAINER*/
+
+#cont-right {
+    margin: 0 7em 1em 0;
+    width: 32em;
+    float: right;
+    height: 46em;
+    border: 1em solid #ffffff;
+}
+
+#cont-right p {
+    text-transform: uppercase;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+#first {
+    color: #191f87;
+    margin: 0.5em 1em 0 0.5em;
+}
+
+#sec {
+    color: #2aa6a3;
+    margin: 0 1em 1em 0.5em;
+}
+
+/* CSS FOR THE BUTTON */
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------
+
+CSS FOR THE PRODUCT SITE
+
+----------------------------------------------------------------------------------------------------------------------*/
+
+#products a {
+    text-decoration: none;
+    color: black;
+    transition: .3s background-color;
+}
+#miniCupcakes {
+    margin-left: 20%;
+    display: inline-block;
+}
+
+#cupcakes {
+    margin-left: 5%;
+    display: inline-block;
+}
+
+#cakes {
+    margin-left: 20%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+#img {
+    border: 0.8em solid white;
+    width: 12em;
+    height: 12em;
+    margin-top: 1em;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------
+
+CSS FOR THE SPECIFIC PRODUCTSITE
+
+----------------------------------------------------------------------------------------------------------------------*/
+
+#productSite {
+    display: block;
+    margin-right: 20%;
+    margin-bottom: 1em;
+    margin-left: 20%;
+    overflow: hidden;
+    clear: both;
+}
+#productImg{
+    width: 10em;
+    height: 10em;
+    float: left;
+    overflow: hidden;
+    position: relative;
+
+}
+#productImg img{
+    height: 10em;
+    width: 10em;
+    display: block;
+    position: absolute;
+
+    /*not nice but it works!*/
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+
+}
+#ProductDetails {
+    position: relative;
+    float: left;
+    padding-top:1em;
+    padding-left: 1em;
+    margin-left:1em;
+}
+
+#ProductDetails p {
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+}
+
+#ProductDetails label {
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+}
+
+#productImgCake{
+    width: 15em;
+    height: 15em;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+#productImgCake img{
+    height: 15em;
+    width: 15em;
+    display: block;
+    position: absolute;
+
+    /*not nice but it works!*/
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+
+}
+
+/*----------------------------------------------------------------------------------------------------------------------
+
+CSS FOR THE ORDER
+
+----------------------------------------------------------------------------------------------------------------------*/
+
+.order-form {
+    margin:1em auto;
+    max-width: 40em;
+    padding: 20px 12px 10px 20px;
+    font: 1em "Lucida Sans Unicode", sans-serif;
+}
+.order-form li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+.order-form label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+}
+.order-form input[type=text],
+.order-form input[type=email],
+textarea,
+select{
+    box-sizing: border-box;
+    border:1px solid #747474;
+    padding: 7px;
+    margin:0px;
+    outline: none;
+}
+.order-form input[type=text]:focus,
+.order-form input[type=email]:focus,
+.order-form textarea:focus,
+
+.order-form select:focus{
+    box-shadow: 0 0 8px #82897e;
+    border: 1px solid #82897e;
+}
+.order-form .field-divided{
+    width: 49%;
+}
+
+.order-form .field-long{
+    width: 100%;
+}
+.order-form .field-select{
+    width: 100%;
+}
+.order-form .field-textarea{
+    height: 10em;
+}
+.order-form input[type=submit], .order-form input[type=button]{
+    background: #ffffff;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #000000;
+    border-radius: 1em;
+}
+.order-form input[type=submit]:hover, .order-form input[type=button]:hover{
+    background: #939393;
+    box-shadow:none;
+}
+.order-form .required{
+    color:red;
+}
+
+#persInformation {
+    height: 39em;
+}
+#persInformation p {
+    margin-left: 20%;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------
+
+CSS FOR THE CART
+
+----------------------------------------------------------------------------------------------------------------------*/
+
+.cart {
+    width: 50%;
+    margin: 1em auto;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------
+
+CSS FOR THE FOOTER
+
+----------------------------------------------------------------------------------------------------------------------*/
+#webShopFooter {
+    background-color: #222222;
+    height: 5em;
+    width: 80%;
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#webShopFooter p {
+    color: #ffffff;
+    padding-top: .5em;
+}
+
+
+
+
+
+
+
