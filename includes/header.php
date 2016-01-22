@@ -46,7 +46,7 @@ $cart = $_SESSION['cart'];
                 <ul id="nav-left" class="nav navbar-nav">
                     <li><a href="index.php<?php echo $lang['LINK_LANG']; ?>"><?php echo $lang['HOME']; ?></a></li>
                     <li class="dropdown">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $lang['PRODUCTS']; ?><span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $lang['PRODUCTS']; ?><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="minicupcakes.php<?php echo $lang['LINK_LANG']; ?>"><?php echo $lang['MINI_CUPCAKES']; ?></a></li>
                             <li><a href="cupcakes.php<?php echo $lang['LINK_LANG']; ?>"><?php echo $lang['CUPCAKES']; ?></a></li>
@@ -76,7 +76,7 @@ $cart = $_SESSION['cart'];
                         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> &nbsp; <?php echo $lang['CART']; ?> <span class="badge"><?php $cart->countItem()?></span>
                     </button></li>
                     <li class="dropdown">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $lang['LANG']?><span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $lang['LANG']?><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="?lang=de">DE</a></li>
                             <li><a href="?lang=en">EN</a></li>
