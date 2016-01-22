@@ -19,11 +19,11 @@ $cart = $_SESSION['cart'];
     <title>Lu's Cakes</title>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="/js/sweetalert.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link type="text/css" rel="stylesheet" href="/styles/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="/styles/sweetalert.css">
-    <link href="/styles/bootstrap.min.css" rel="stylesheet">
-    <link href="/styles/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
 </head>
 <body>
